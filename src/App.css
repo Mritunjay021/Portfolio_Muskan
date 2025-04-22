@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    /* color: whitesmoke; */
+}
+
+.app {
+    position: relative;
+    z-index: 1;
+    background-color: rgb(0, 0, 0); 
+    color: whitesmoke;
+}
+
+.app::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://www.readz.com/image/8359264.1620928269000/gradient-backgrounds.webp');
+    background-size: cover;
+    background-attachment: fixed;
+    filter: opacity(0.3); 
+    z-index: -1;
+}
+
+/* Default Light Theme */
+.app.light {
+    background-color: #ffffff; 
+    color: #000000; 
+}
+
+.app.light::before {
+    /* background-image: none;  */
+    background-image: url('https://img.freepik.com/free-vector/white-color-background-gradient-abstract-modern_343694-2130.jpg?t=st=1732087332~exp=1732090932~hmac=fbb885fd964e1743dc874ca6a31fac433826caeb076a2b24012b6aed1e2dea5b&w=2000');
+    filter: opacity(0.8);
+}
+
+/* Footer specific styles */
+footer {
+    background-color: rgb(0, 0, 0); 
+    color: whitesmoke;
+}
